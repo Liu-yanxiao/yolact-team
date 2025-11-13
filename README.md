@@ -5,10 +5,21 @@
      ╚████╔╝ ██║   ██║██║     ███████║██║        ██║   
       ╚██╔╝  ██║   ██║██║     ██╔══██║██║        ██║   
        ██║   ╚██████╔╝███████╗██║  ██║╚██████╗   ██║   
-       ╚═╝    ╚═════╝ ╚══════╝╚═╝  ╚═╝ ╚═════╝   ╚═╝ 
+       ╚═╝    ╚═════╝ ╚══════╝╚═╝  ╚═╚═════╝   ╚═╝ 
 ```
 
 A simple, fully convolutional model for real-time instance segmentation. This is the code for our papers:
+
+## Enhanced Utilities
+
+- **Data Processing**: Dataset analysis, batch processing, image preprocessing, data splitting, image tiling, annotation format conversion
+- **Result Measuring**: Metrics calculation (mAP, precision, recall), confusion matrices, performance profiling, detection analysis, heatmaps, loss tracking  
+- **Miscellaneous**: Checkpoint management, result export (JSON/CSV), visualizations, data augmentation, model evaluation, result comparison
+
+Import requied dependency:
+```python
+from utils.enhanced_utils import DatasetAnalyzer, MetricsCalculator, CheckpointManager
+```
  - [YOLACT: Real-time Instance Segmentation](https://arxiv.org/abs/1904.02689)
  - [YOLACT++: Better Real-time Instance Segmentation](https://arxiv.org/abs/1912.06218)
 
